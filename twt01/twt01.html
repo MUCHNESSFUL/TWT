@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>twt01</title>
+    <link rel="stylesheet" href="./twt01.css">
+
+</head>
+<body>
+    <div id="father">
+        <div id="son01"></div>
+        <div id="son02">
+            <div id="grandson01">电脑布局1440px</div>
+            <div id="grandson02">
+                <div class="D">这</div>
+                <div class="C D">里</div>
+                <div class="C">是</div>
+                <div class="C D">均</div>
+                <div >分</div>
+            </div>
+            <div id="grandson03">
+                <div id="A"></div>
+                <div id="B"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let mqList = window.matchMedia('(max-width: 768px)');
+        function widthChangeCallback(mqList) {
+        console.log(mqList, '-')
+        if(mqList.matches) {
+        grandson01.innerHTML = `<p class="large">平板布局768px</p>`;
+        } else {
+        grandson01.innerHTML = `<p class="small">电脑布局1440px</p>`;
+        }
+        }
+        widthChangeCallback(mqList)
+        mqList.addEventListener('change', widthChangeCallback);
+        </script>
+</body>
+</html>

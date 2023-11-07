@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>twt03</title>
+    <link rel="stylesheet" href="./twt03.css">
+</head>
+<body>
+    <div id="main">
+        <p>欢迎来到武侠世界！</p>
+        <img src="./武侠男1.png" alt="武侠男" id="man">
+        <form name="f" id="T" action="userpanel.html" method="get">
+            <div id="panel">
+                <input type="text" id="user" name="uname" placeholder="用户名" onfocus="javascript:if(this.value == '')this.placeholder = '';" onblur="javascript:this.placeholder = '用户名'">
+                <input type="password" id="password" placeholder="密码" onfocus="javascript:if(this.value == '')this.placeholder = '';" onblur="javascript:this.placeholder = '密码'">
+                <button id="log" type="button" onclick="check(this)">登录</button>
+            </div>
+        </form>
+        <img src="./武侠女1.png" alt="武侠女" id="woman">
+        <span>网站所有内容均来自互联网分享站点所提供的公开引用资源，未提供资源上传、存储服务。如有侵权请联系删除，邮箱：tju@qq.com</span>
+    </div>
+    <script type="text/javascript" src="./twt03.js"></script>
+</body>
+</html>

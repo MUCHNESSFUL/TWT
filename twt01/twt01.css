@@ -1,0 +1,230 @@
+@media screen and (min-width:768px){
+    /* 基本规范 */
+    * {
+        border: none;
+        margin: 0;
+        padding: 0;
+/* 定义整个界面 */
+    }
+    html,body {
+        height: 100%;
+        width: 100%;
+    }
+    body {
+        background-color: rgb(222, 222, 222);
+    }
+    #father {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    #son01 {
+        height: 760px;
+        width: 20%;
+        margin: 0px 50px;
+        border: solid 1px black;
+        border-radius: 10px;
+        background-color: white;
+    }
+    #son02 {
+        height: 760px;
+        width: 80%;
+        margin-right: 50px;
+        align-items: center;
+    }
+    #grandson01 {
+        font-size: 80px;
+        font-family: 楷体;
+        text-align: center;
+        vertical-align: baseline;
+        color: black;
+        background-color: #fff;
+        border: solid 1px black;
+        border-radius: 10px;
+        height: 150px;
+        line-height:150px;
+    }
+    #grandson02 {
+        height: 105px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #grandson02 > div {
+        background-color: #fff;
+        width: 150px;
+        height: 80px;
+        border: solid 1px black;
+        border-radius: 10px;
+        margin-top: 20px;
+        font-size: 50px;
+        font-family: 楷体;
+        text-align: center;
+        line-height: 80px;
+    }
+    #grandson03 {
+        display: flex;
+
+    }
+    #grandson03 > div {
+        height: 480px;
+        width: 400px;
+        background-color: #fff;
+        border: solid 1px black;
+        border-radius: 10px;
+        margin-top: 20px ;
+    }
+    #A {
+        flex-grow: 2;
+        margin-right: 60px;
+    }
+    #B {
+        flex-grow: 8;
+    }
+}
+
+@media  screen and (max-width:768px) {
+    * {
+        border: none;
+        margin: 0;
+        padding: 0;
+}
+    html,body {
+        height: 100%;
+        width: 100%;
+}
+    body {
+        background-color: rgb(222, 222, 222);
+    }
+    #son01 {
+        display: none;
+}
+    #son02 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+}   
+    #grandson01 {
+        width: 600px;
+        height: 75px;
+        line-height: 75px;
+        align-items: center;
+        border: solid 1px black;
+        border-radius: 10px;
+        background-color: #fff;
+        font-size: 40px;
+        font-family: 楷体;
+        text-align: center;
+}
+    #grandson02 {
+        display: flex;
+        justify-content: space-between;
+        width: 600px;
+    }
+    #grandson02 > div {
+        background-color: #fff;
+        width: 100px;
+        height: 60px;
+        border: solid 1px black;
+        border-radius: 10px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-family: 楷体;
+        text-align: center;
+        line-height: 60px;    
+    }
+    #grandson03 {
+        display: flex;
+        width: 600px;
+        justify-content: space-between;
+    }
+    #grandson03 > div {
+        height: 480px;
+        background-color: #fff;
+        border: solid 1px black;
+        border-radius: 10px;
+        margin-top: 20px ;
+    }
+    #A {
+        width: 150px;
+    }
+    #B {
+        width: 400px;
+    }
+}
+
+@media  screen and (max-width:375px) {
+    * {
+        border: none;
+        margin: 0;
+        padding: 0;
+}
+    html,body {
+        height: 100%;
+        width: 100%;
+}
+    body {
+        background-color: rgb(222, 222, 222);
+    }
+    #son01 {
+        display: none;
+}
+    #son02 {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+}   
+    #grandson01 {
+        width: 300px;
+        height: 75px;
+        line-height: 75px;
+        align-items: center;
+        border: solid 1px black;
+        border-radius: 10px;
+        background-color: #fff;
+        font-size: 30px;
+        font-family: 楷体;
+        text-align: center;
+}
+    #grandson02 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        justify-content: flex-start;
+    }
+    #grandson02 > div {
+        background-color: #fff;
+        width: 80px;
+        height: 30px;
+        border: solid 1px black;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-family: 楷体;
+        text-align: center;
+        line-height: 30px;    
+    }
+    #grandson03 {
+        display: flex;
+        width: 300px;
+        flex-direction: column;
+    }
+    #grandson03 > div {
+        height: 200px;
+        background-color: #fff;
+        border: solid 1px black;
+        border-radius: 10px;
+        margin-top: 20px ;
+    }
+    #A {
+        width: 300px;
+    }
+    #B {
+        width: 300px;
+    }
+    .D {
+        margin-right: 26px;
+    }
+}

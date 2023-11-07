@@ -1,0 +1,70 @@
+html,body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: rgb(222, 222, 222);
+}
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    background-image: url(./武侠.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p {
+    font-size: 180px;
+    font-family: 楷体;
+    margin: 0;
+    padding: 0;
+    animation: color-change 2s infinite;
+}
+@keyframes color-change {
+    0% { color: red}
+    50% {color: blue;}
+    100% {color: green;}
+}
+#man {
+    max-width: 40%;
+    max-height: 40%;
+}
+#woman {
+    max-width: 40%;
+    max-height: 40%;
+}
+#panel {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 500px;
+    height:400px;
+    text-align: center;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; */
+}
+#user {
+    width: 300px;
+    height: 30px;
+    border-radius: 4px;
+    margin-top: 15%;
+    margin-bottom: 40px;
+}
+#password {
+    width: 300px;
+    height: 30px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+}
+#log {
+    width: 200px;
+    height: 40px;
+    border-radius: 4px;
+}
+#log:hover {
+    color: rgb(168, 17, 55);
+}
